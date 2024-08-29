@@ -3,7 +3,7 @@ title: "My Document"
 author: "Josh Errickson"
 format: 
   html:
-    toc: true
+    toc: false
   pdf: default
   docx: default
 ---
