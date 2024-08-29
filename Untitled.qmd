@@ -1,0 +1,40 @@
+---
+title: "My Document"
+author: "Josh Errickson"
+format: 
+  html:
+    toc: true
+  pdf: default
+  docx: default
+---
+
+```{r}
+#| echo: false
+library(boot)
+data(mtcars)
+x <- mean(mtcars$mpg)
+y <- sd(mtcars$disp)
+```
+
+## Quarto
+
+Quarto enables you to weave *together content* and executable code into a finished document. To learn more about [Quarto](https://quarto.org) see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+
+``` r
+2 + 2
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+x
+```
+
+The `echo: false` option disables the printing of code (only output is displayed). The mean of mpg is `r round(x,1)`.
